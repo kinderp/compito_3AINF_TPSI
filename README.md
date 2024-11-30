@@ -16,13 +16,15 @@ Realizzare un programma scritto in linguaggio C così composto:
    * `__LINE__` : stampa il numero di riga (%d)
    * `__func__` : stampa il nome della funzione (%s)
 6. `main.c` che attraverso un menu' (tipo quello mostrato sotto) chieda all'utente l'operazione da svolgere e gli operandi su cui applicare l'operazione e che stampi il risultato finale [1.5 pt]
+
    ```c
-  printf("1. Somma\n");
-	printf("2. Moltiplicazione\n");
-	printf("3. Differenza\n");
-	printf("4. Divisione\n");
-	printf("5. Potenza\n");
+   printf("1. Somma\n");
+   printf("2. Moltiplicazione\n");
+   printf("3. Differenza\n");
+   printf("4. Divisione\n");
+   printf("5. Potenza\n");
    ```
-7. Richiamare la macro `TRACE()` nella prima riga di ogni funzione (compreso il main) solo se la macro `DEBUG` è definita. Definire al macro `DEBUG` attraverso l'opzioni `-DDEBUG` a tempo di compilazione [0.5]
+   
+8. Richiamare la macro `TRACE()` nella prima riga di ogni funzione (compreso il main) solo se la macro `DEBUG` è definita. Definire al macro `DEBUG` attraverso l'opzioni `-DDEBUG` a tempo di compilazione [0.5]
 
 Realizzare un Makefile che compili e linki assieme tutti i file. **Un programma che non compila o senza Makefile non avrà la sufficienza**
